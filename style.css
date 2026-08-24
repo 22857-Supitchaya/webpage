@@ -3289,3 +3289,254 @@ main {
     }
 
 }
+
+
+/* =====================================================
+   FINAL FIX : จัดหน้าให้อยู่กึ่งกลาง + เพิ่มกรอบให้เนื้อหา
+   ===================================================== */
+
+
+/* ---------- จัดเนื้อหาหลักให้อยู่กึ่งกลาง ---------- */
+
+.section-container {
+    width: calc(100% - 40px);
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ---------- หน้าหัวข้อแต่ละหน้า ---------- */
+
+.page-hero {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* ---------- PROFILE : กล่องข้อมูล ---------- */
+
+.profile-information {
+    background: rgba(255, 255, 255, 0.78);
+    border: 2px solid rgba(13, 71, 161, 0.18);
+    border-radius: 24px;
+    padding: 35px;
+    box-shadow: 0 12px 35px rgba(13, 71, 161, 0.12);
+}
+
+.info-box {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(13, 71, 161, 0.18);
+    border-radius: 16px;
+    padding: 18px;
+}
+
+
+/* ---------- ABOUT ME ---------- */
+
+.about-card {
+    background: rgba(255, 255, 255, 0.82);
+    border: 2px solid rgba(13, 71, 161, 0.18);
+    border-radius: 24px;
+    padding: 35px;
+    box-shadow: 0 12px 35px rgba(13, 71, 161, 0.12);
+}
+
+
+/* ---------- EDUCATION : Timeline ---------- */
+
+.timeline-content {
+    background: rgba(255, 255, 255, 0.86);
+    border: 2px solid rgba(13, 71, 161, 0.18);
+    border-radius: 20px;
+    padding: 25px 30px;
+    box-shadow: 0 10px 30px rgba(13, 71, 161, 0.10);
+}
+
+
+/* ---------- EDUCATION : กล่องสิ่งที่กำลังเรียน ---------- */
+
+.highlight-panel {
+    background: rgba(255, 255, 255, 0.82);
+    border: 2px solid rgba(13, 71, 161, 0.18);
+    border-radius: 26px;
+    padding: 35px;
+    box-shadow: 0 12px 35px rgba(13, 71, 161, 0.12);
+}
+
+.highlight-item {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(13, 71, 161, 0.18);
+    border-radius: 18px;
+    padding: 20px;
+}
+
+
+/* ---------- EDUCATION : ตาราง ---------- */
+
+.table-wrapper {
+    background: rgba(255, 255, 255, 0.85);
+    border: 2px solid rgba(13, 71, 161, 0.18);
+    border-radius: 20px;
+    padding: 10px;
+    overflow-x: auto;
+    box-shadow: 0 12px 35px rgba(13, 71, 161, 0.10);
+}
+
+
+/* =====================================================
+   HOBBY : 6 ช่องให้เป็นระเบียบและสมมาตร
+   ===================================================== */
+
+.hobby-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* กรอบของแต่ละงานอดิเรก */
+
+.hobby-card {
+    background: rgba(255, 255, 255, 0.88);
+    border: 2px solid rgba(13, 71, 161, 0.18);
+    border-radius: 24px;
+    padding: 30px;
+    min-height: 260px;
+
+    box-shadow: 0 12px 30px rgba(13, 71, 161, 0.10);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+/* เวลาเอาเมาส์ไปวาง */
+
+.hobby-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(13, 71, 161, 0.18);
+    border-color: rgba(13, 71, 161, 0.35);
+}
+
+
+/* เลข 01 / 02 / 03 */
+
+.hobby-number {
+    margin-bottom: 10px;
+}
+
+
+/* ข้อความในแต่ละช่อง */
+
+.hobby-card h2 {
+    margin-bottom: 12px;
+}
+
+.hobby-card p {
+    line-height: 1.8;
+}
+
+
+/* ---------- Quote ---------- */
+
+.quote-card {
+    background: rgba(255, 255, 255, 0.82);
+    border: 2px solid rgba(13, 71, 161, 0.18);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 12px 35px rgba(13, 71, 161, 0.12);
+}
+
+
+/* =====================================================
+   CONTACT : กรอบแต่ละช่อง
+   ===================================================== */
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.88);
+    border: 2px solid rgba(13, 71, 161, 0.18);
+    border-radius: 20px;
+    padding: 25px;
+
+    box-shadow: 0 10px 30px rgba(13, 71, 161, 0.10);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 35px rgba(13, 71, 161, 0.16);
+}
+
+
+/* ---------- Contact CTA ---------- */
+
+.cta-card {
+    border-radius: 26px;
+    padding: 40px;
+    box-shadow: 0 12px 35px rgba(13, 71, 161, 0.12);
+}
+
+
+/* =====================================================
+   มือถือ / iPad แนวตั้ง
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    .section-container {
+        width: calc(100% - 30px);
+    }
+
+    .hobby-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .profile-information,
+    .about-card,
+    .highlight-panel,
+    .quote-card {
+        padding: 25px;
+    }
+}
+
+
+/* =====================================================
+   มือถือจอเล็ก
+   ===================================================== */
+
+@media (max-width: 550px) {
+
+    .section-container {
+        width: calc(100% - 24px);
+    }
+
+    .hobby-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hobby-card {
+        min-height: auto;
+    }
+
+    .profile-information,
+    .about-card,
+    .highlight-panel,
+    .quote-card {
+        padding: 22px;
+    }
+}
