@@ -3,136 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ช่องทางการติดต่อสุพิชญา บุตรต๊ะ">
-    <title>ติดต่อ | สุพิชญา</title>
+    <meta name="description" content="ข้อมูลติดต่อของนักเรียน">
+    <title>My Ocean World | ติดต่อ</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Loading Scene -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="diver">🤿</div>
+            <div class="loading-ring"></div>
+            <h2>Diving into my world...</h2>
+            <p>Let's connect</p>
+
+            <div class="loading-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Background -->
+    <div class="ocean-background">
+
+        <div class="sun-rays"></div>
+
+        <span class="bubble bubble-1"></span>
+        <span class="bubble bubble-2"></span>
+        <span class="bubble bubble-3"></span>
+        <span class="bubble bubble-4"></span>
+
+        <span class="fish fish-1">🐠</span>
+        <span class="fish fish-2">🐟</span>
+
+        <div class="coral coral-left">🪸</div>
+        <div class="coral coral-right">🪸</div>
+
+    </div>
+
+
+    <!-- Navigation -->
     <header class="site-header">
-        <nav class="navbar container" aria-label="เมนูหลัก">
+
+        <nav class="navbar">
+
             <a href="index.html" class="logo">
-                <span class="logo-mark">S</span>
-                <span>Supitchaya<span class="logo-dot">.</span></span>
+                <span class="logo-icon">🌊</span>
+                <span>My Ocean</span>
             </a>
 
             <div class="nav-links">
+
                 <a href="index.html">หน้าแรก</a>
                 <a href="profile.html">ประวัติส่วนตัว</a>
                 <a href="education.html">การศึกษา</a>
                 <a href="hobby.html">งานอดิเรก</a>
                 <a href="contact.html" class="active">ติดต่อ</a>
+
             </div>
+
         </nav>
+
     </header>
+
 
     <main>
 
-        <section class="page-hero contact-hero">
-            <div class="page-hero-decoration"></div>
+        <section class="page-hero section-container">
 
-            <div class="container">
-                <span class="section-label">GET IN TOUCH</span>
-                <h1>มา<span>พูดคุยกัน</span></h1>
+            <span class="eyebrow">04 / CONTACT</span>
+
+            <h1>
+                Let's
+                <span>Connect</span>
+            </h1>
+
+            <p>
+                หากต้องการพูดคุยหรือรู้จักฉันมากขึ้น
+                สามารถติดต่อได้ตามช่องทางด้านล่างนี้เลย
+            </p>
+
+        </section>
+
+
+        <section class="contact-section section-container">
+
+            <div class="contact-intro">
+
+                <span class="eyebrow">SAY HELLO 👋</span>
+
+                <h2>
+                    สามารถติดต่อ
+                    <span>ฉันได้ที่</span>
+                </h2>
+
                 <p>
-                    หากต้องการติดต่อหรือพูดคุย
-                    สามารถเลือกช่องทางด้านล่างได้เลย
+                    ยินดีที่ได้รู้จักทุกคน
+                    และขอบคุณที่แวะเข้ามาเยี่ยมชม
+                    Portfolio ของฉัน
                 </p>
+
             </div>
-        </section>
 
-        <section class="contact-section section-padding">
-            <div class="container">
 
-                <div class="contact-intro">
-                    <span class="section-label">CONTACT ME</span>
-                    <h2>สามารถติดต่อ<span>ฉันได้ที่</span></h2>
-                    <p>
-                        ขอบคุณที่เข้ามาเยี่ยมชม Portfolio ของฉัน
-                        หวังว่าเราจะได้พูดคุยและแลกเปลี่ยนสิ่งที่สนใจกัน
-                    </p>
-                </div>
+            <div class="contact-grid">
 
-                <div class="contact-grid">
+                <a href="mailto:example@email.com" class="contact-card">
 
-                    <a href="mailto:example@email.com" class="contact-card email-card">
-                        <div class="contact-card-top">
-                            <span class="contact-icon">✉</span>
-                            <span class="contact-arrow">↗</span>
-                        </div>
+                    <div class="contact-icon">✉️</div>
 
-                        <span class="contact-type">EMAIL</span>
-                        <h3>อีเมล</h3>
-                        <p>example@email.com</p>
-                    </a>
-
-                    <div class="contact-card">
-                        <div class="contact-card-top">
-                            <span class="contact-icon">🌐</span>
-                            <span class="contact-arrow">↗</span>
-                        </div>
-
-                        <span class="contact-type">WEBSITE</span>
-                        <h3>Portfolio</h3>
-                        <p>เว็บไซต์แนะนำตัวของฉัน</p>
+                    <div>
+                        <small>EMAIL</small>
+                        <h3>gamhom181154@email.com</h3>
+                        <span>ส่งอีเมลถึงฉัน →</span>
                     </div>
 
-                    <div class="contact-card">
-                        <div class="contact-card-top">
-                            <span class="contact-icon">📱</span>
-                            <span class="contact-arrow">↗</span>
-                        </div>
+                </a>
 
-                        <span class="contact-type">SOCIAL</span>
-                        <h3>Social / Contact</h3>
-                        <p>สามารถเพิ่มช่องทาง Social Media ของคุณได้ที่นี่</p>
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">🌐</div>
+
+                    <div>
+                        <small>WEBSITE</small>
+                        <h3>My Ocean Portfolio</h3>
+                        <span>Personal Website</span>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">💬</div>
+
+                    <div>
+                        <small>SOCIAL: Instagram</small>
+                        <h3>Supitchaya_Butta</h3>
+                        <span>Social Media</span>
                     </div>
 
                 </div>
 
             </div>
+
         </section>
 
-        <section class="contact-cta">
-            <div class="container contact-cta-box">
 
-                <div class="contact-cta-icon">✦</div>
+        <!-- CTA -->
+        <section class="cta-section section-container">
+
+            <div class="cta-card">
+
+                <div class="cta-decoration">🐚</div>
 
                 <div>
-                    <span class="section-label light-label">THANK YOU</span>
-                    <h2>ขอบคุณที่เข้ามาชมเว็บไซต์ของฉัน</h2>
+
+                    <span class="eyebrow">THANK YOU</span>
+
+                    <h2>
+                        Thanks for
+                        <span>diving in!</span>
+                    </h2>
+
                     <p>
-                        เว็บไซต์นี้เป็นส่วนหนึ่งของโครงงานวิชาคอมพิวเตอร์
+                        ขอบคุณที่เข้ามาชมโลกใต้ทะเล
+                        และทำความรู้จักกับฉัน
                     </p>
+
                 </div>
 
                 <a href="index.html" class="btn btn-light">
-                    กลับหน้าแรก <span>→</span>
+                    กลับหน้าแรก
+                    <span>→</span>
                 </a>
 
             </div>
+
         </section>
 
     </main>
 
-    <footer class="footer">
-        <div class="container footer-grid">
 
-            <div class="footer-brand">
-                <a href="index.html" class="logo logo-footer">
-                    <span class="logo-mark">S</span>
-                    <span>Supitchaya<span class="logo-dot">.</span></span>
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div>
+                <a href="index.html" class="logo footer-logo">
+                    🌊 My Ocean
                 </a>
-                <p>Student Portfolio ของสุพิชญา บุตรต๊ะ</p>
+
+                <p>
+                    Student Portfolio
+                    <br>
+                    Exploring my world, one wave at a time.
+                </p>
             </div>
 
-            <div class="footer-class">
-                <span>STUDENT</span>
-                <strong>มัธยมศึกษาปีที่ 3/2</strong>
-            </div>
-
-            <div class="footer-links">
+            <div class="footer-nav">
                 <a href="index.html">หน้าแรก</a>
                 <a href="profile.html">ประวัติส่วนตัว</a>
                 <a href="education.html">การศึกษา</a>
@@ -142,10 +217,10 @@
 
         </div>
 
-        <div class="container footer-bottom">
-            <p>© 2026 Supitchaya Portfolio. All rights reserved.</p>
-            <p>Designed with creativity &amp; passion.</p>
+        <div class="copyright">
+            © 2026 [สุพิชญา] · M.3 Student Portfolio
         </div>
+
     </footer>
 
 </body>
