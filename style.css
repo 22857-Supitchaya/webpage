@@ -3540,3 +3540,259 @@ main {
         padding: 22px;
     }
 }
+
+/* =========================================
+   CONTACT PAGE - FINAL FIX
+   ========================================= */
+
+/* จัดพื้นที่เนื้อหาหลักให้อยู่ตรงกลาง */
+.contact-section {
+    width: min(1100px, calc(100% - 48px));
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+/* ส่วนแนะนำด้านบน */
+.contact-intro {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto 45px auto !important;
+    text-align: center;
+}
+
+.contact-intro h2 {
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+.contact-intro p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================
+   CONTACT CARDS
+   ========================================= */
+
+.contact-grid {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 24px !important;
+
+    align-items: stretch;
+}
+
+
+/* การ์ดแต่ละใบ */
+.contact-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 210px;
+
+    box-sizing: border-box;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+
+    padding: 30px !important;
+
+    border: 2px solid rgba(13, 71, 161, 0.18) !important;
+    border-radius: 24px !important;
+
+    background: rgba(255, 255, 255, 0.78) !important;
+
+    box-shadow:
+        0 12px 30px rgba(13, 71, 161, 0.10) !important;
+
+    text-decoration: none !important;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+/* เอฟเฟกต์เวลาเอานิ้ว/เมาส์ไปแตะ */
+.contact-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(33, 150, 243, 0.45) !important;
+
+    box-shadow:
+        0 18px 40px rgba(13, 71, 161, 0.16) !important;
+}
+
+
+/* ไอคอน */
+.contact-card .contact-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 16px;
+
+    background: rgba(33, 150, 243, 0.12);
+
+    font-size: 28px;
+}
+
+
+/* ตัวหนังสือในการ์ด */
+.contact-card small {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #1976d2;
+}
+
+
+.contact-card h3 {
+    margin: 0 0 8px 0;
+
+    font-size: 20px;
+    line-height: 1.4;
+
+    color: #0d47a1;
+
+    overflow-wrap: anywhere;
+}
+
+
+.contact-card span {
+    font-size: 14px;
+    color: #456;
+}
+
+
+/* =========================================
+   CTA
+   ========================================= */
+
+.cta-section {
+    width: min(1100px, calc(100% - 48px));
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    padding-bottom: 90px;
+}
+
+
+.cta-card {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border-radius: 28px;
+
+    padding: 45px;
+
+    border: 2px solid rgba(255, 255, 255, 0.45);
+
+    box-shadow:
+        0 15px 40px rgba(13, 71, 161, 0.12);
+}
+
+
+/* =========================================
+   PAGE HERO
+   ========================================= */
+
+.page-hero {
+    width: min(1100px, calc(100% - 48px));
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    padding-top: 110px;
+    padding-bottom: 50px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .contact-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 620px) {
+
+    .page-hero {
+        width: calc(100% - 32px);
+        padding-top: 90px;
+        padding-bottom: 35px;
+    }
+
+
+    .contact-section {
+        width: calc(100% - 32px);
+        padding-top: 35px;
+        padding-bottom: 55px;
+    }
+
+
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+    }
+
+
+    .contact-card {
+        min-height: 190px;
+        padding: 25px !important;
+    }
+
+
+    .contact-card h3 {
+        font-size: 18px;
+    }
+
+
+    .cta-section {
+        width: calc(100% - 32px);
+        padding-bottom: 60px;
+    }
+
+
+    .cta-card {
+        padding: 30px 24px;
+    }
+
+}
